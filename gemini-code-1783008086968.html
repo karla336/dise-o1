@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karla Aguilar | Diseñadora Gráfica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        /* --- Variables de Colores Pastel --- */
+        :root {
+            --bg-principal: #f9f6f0;
+            --pastel-rosa: #ffd6d6;
+            --pastel-lila: #e8dbfc;
+            --pastel-verde: #d2e7df;
+            --texto-oscuro: #2b2b2b;
+            --texto-secundario: #6e6e6e;
+            --blanco: #ffffff;
+        }
+
+        /* --- Estilos Generales --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--bg-principal);
+            color: var(--texto-oscuro);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Navbar --- */
+        header {
+            padding: 30px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .btn-contacto {
+            background-color: var(--texto-oscuro);
+            color: var(--blanco);
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-contacto:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 80px 0 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--texto-secundario);
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        .cta-principal {
+            background-color: var(--pastel-lila);
+            color: var(--texto-oscuro);
+            text-decoration: none;
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: inline-block;
+            box-shadow: 0 4px 14px rgba(232, 219, 252, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .cta-principal:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(232, 219, 252, 0.6);
+        }
+
+        /* --- Servicios --- */
+        .servicios {
+            padding: 80px 0;
+            background-color: var(--blanco);
+            border-radius: 40px 40px 0 0;
+        }
+
+        .servicios-titulo {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .grid-servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            padding: 40px;
+            border-radius: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-1 { background-color: var(--pastel-rosa); }
+        .card-2 { background-color: var(--pastel-lila); }
+        .card-3 { background-color: var(--pastel-verde); }
+
+        .card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: var(--texto-oscuro);
+            opacity: 0.8;
+            font-size: 1rem;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--blanco);
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.9rem;
+            color: var(--texto-secundario);
+            border-top: 1px solid #f0f0f0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .grid-servicios { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">karla aguilar.</div>
+            <a href="https://wa.me/TU_NUMERO" class="btn-contacto" target="_blank">Hablemos</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Llevo la identidad de tu marca al siguiente nivel en redes sociales</h1>
+            <p>Diseño soluciones visuales estéticas, modernas y estratégicas para que tu negocio destaque en el feed de tus clientes.</p>
+            <a href="https://wa.me/TU_NUMERO" class="cta-principal" target="_blank">Iniciar mi proyecto</a>
+        </div>
+    </section>
+
+    <section class="servicios">
+        <div class="container">
+            <h2 class="servicios-titulo">Mis Servicios</h2>
+            
+            <div class="grid-servicios">
+                <div class="card card-1">
+                    <h3>Diseño de Feeds</h3>
+                    <p>Estructuración visual armónica y atractiva para que tu perfil de Instagram cuente una historia coherente a primera vista.</p>
+                </div>
+                
+                <div class="card card-2">
+                    <h3>Diseño de Posts</h3>
+                    <p>Contenido diario optimizado e impactante: carruseles, publicaciones estáticas y plantillas personalizadas que generan engagement.</p>
+                </div>
+                
+                <div class="card card-3">
+                    <h3>Stories & Highlights</h3>
+                    <p>Diseño de portadas para historias destacadas y layouts dinámicos para tus historias diarias, manteniendo siempre la estética de tu marca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Karla Aguilar. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
